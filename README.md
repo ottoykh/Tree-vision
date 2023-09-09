@@ -35,7 +35,7 @@ Direct to the pre-write code file with:
 ```
 cd /content/Tree-vision/TreeVision/TreeAI
 ```
-## Usage/Examples
+## Usage
 
 ```python
 from Diagnosis import TreeAI, TreeAI_Batch
@@ -46,7 +46,7 @@ TreeAI_Batch("Your Target Folder","Result Output.csv")
 ```
 
 
-## Authors
+## Author
 
 - [Yu Kai Him Otto](https://www.github.com/ottoykh)
 
