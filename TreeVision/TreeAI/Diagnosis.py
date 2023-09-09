@@ -30,12 +30,6 @@ def TreeAI(image_path):
     plt.axis('off')
     plt.show()
 
-def query(filename):
-    with open(filename, "rb") as f:
-        data = f.read()
-    response = requests.post(API_URL, headers=headers, data=data)
-    return response.json()
-
 def TreeAI_Batch(folder_path, output_csv):
     image_paths = []
     for filename in os.listdir(folder_path):
@@ -44,6 +38,12 @@ def TreeAI_Batch(folder_path, output_csv):
 
     num_images = len(image_paths)
     results = []
+
+    def query(filename):
+        with open(filename, "rb") as f:
+            data = f.read()
+        response = requests.post(API_URL, headers=headers, data=data)
+        return response.json()
 
     for i, image_path in enumerate(image_paths):
         print(f"Processing image {i+1}/{num_images}...")
