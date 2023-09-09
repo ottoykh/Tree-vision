@@ -28,7 +28,7 @@ Tree-vision/
    TreeVision/
       TreeAI/
         __init__.py
-        api.py
+        Diagnosis.py
     __init__.py
 ```
 Direct to the pre-write code file with: 
