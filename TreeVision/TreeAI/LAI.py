@@ -72,7 +72,6 @@ def process_data(directory, scan_angle_column, classification_column, height_col
         result = {
             "File": file_path,
             "Gap Probability (P_gap)": P_gap,
-            "Effective Extinction Coefficient (k_eff)": np.median(k_eff),
             "Clumping Index": clumping_index,
             "Laser Penetration Index (PNB)": LPI_pnb,
             "Leaf Area Index (LAI)": LAI
